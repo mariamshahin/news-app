@@ -1,0 +1,29 @@
+//
+// Layout.scss
+//
+
+// Navbar
+
+.layout-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 35px;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid rgba($white, 0.1);
+  background-color: $primary;
+  box-shadow: $box-shadow;
+}
+
+// footer
+
+.layout-footer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 12px 35px;
+  background-color: $dark-bg;
+  color: rgba($white, 0.5);
+}

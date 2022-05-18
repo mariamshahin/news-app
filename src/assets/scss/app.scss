@@ -1,0 +1,52 @@
+//Fonts
+@import 'fonts/fonts';
+
+//Core files
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+@import 'variables';
+@import './node_modules/bootstrap/scss/mixins.scss';
+
+// Components
+@import 'components/buttons';
+
+// Pages
+@import 'pages/layout';
+
+// App Base Styles
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gray-700;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: $form-label-margin-bottom;
+}

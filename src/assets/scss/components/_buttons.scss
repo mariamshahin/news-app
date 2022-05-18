@@ -1,0 +1,23 @@
+//
+// _buttons.scss
+//
+
+// Bootstrap Extended
+
+button,
+a {
+  outline: none !important;
+}
+
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 30px;
+}
+
+// Custom
+
+.nav-btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: $dark;
+}
