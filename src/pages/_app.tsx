@@ -1,12 +1,17 @@
 import type { AppProps } from 'next/app';
+import { Provider } from 'react-redux';
 import MainLayout from 'app/layouts/main-layout';
-import "app/assets/scss/index.scss";
+import store from 'app/store/store';
+
+import 'app/assets/scss/index.scss';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
-    <MainLayout>
-      <Component {...pageProps} />
-    </MainLayout>
+    <Provider store={store}>
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
+    </Provider>
   );
 }
 

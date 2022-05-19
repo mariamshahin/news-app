@@ -6,13 +6,15 @@ const Navbar = () => {
   return (
     <nav className='layout-navbar'>
       <Link href='/' className='navbar-logo'>
-        <Image
-          src='/images/educatly-logo.svg'
-          alt='Eduactly'
-          className='logo'
-          width={115}
-          height={25}
-        />
+        <a>
+          <Image
+            src='/images/educatly-logo.svg'
+            alt='Eduactly'
+            className='logo'
+            width={115}
+            height={25}
+          />
+        </a>
       </Link>
 
       <Button
