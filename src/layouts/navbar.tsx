@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from 'reactstrap';
+import { MdArrowForwardIos } from 'react-icons/md';
 
 const Navbar = () => {
   return (
@@ -23,7 +24,8 @@ const Navbar = () => {
         href='https://www.educatly.com'
         target='_blank'
       >
-        Visit our website
+        <span className='d-none d-sm-inline-block'>Visit our website</span>{' '}
+        <MdArrowForwardIos />
       </Button>
     </nav>
   );

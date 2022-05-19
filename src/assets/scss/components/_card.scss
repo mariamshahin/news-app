@@ -1,0 +1,37 @@
+//
+// _card.scss
+//
+
+.card {
+  margin-bottom: $grid-gutter-width;
+  box-shadow: $box-shadow;
+
+  .img-thumbnail {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  h5 {
+    font-weight: bold;
+  }
+}
+
+.card-drop {
+  color: $body-color;
+}
+
+.card-title {
+  font-size: 15px;
+  margin: 0 0 7px 0;
+  font-weight: 500;
+}
+
+.grey {
+  color: $grey;
+  margin-bottom: 24px;
+}

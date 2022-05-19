@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 import type { RootState } from '../store';
 import appConfig from 'app/config/app.config';
+import { Post } from 'app/types';
 
 export const fetchNews = createAsyncThunk(
   'news/fetchNews',
@@ -18,13 +19,13 @@ export const fetchNews = createAsyncThunk(
 export interface NewsState {
   pending: boolean;
   error: boolean;
-  news: any;
+  posts: Array<Post>;
 }
 
 const initialState: NewsState = {
   pending: false,
   error: false,
-  news: {},
+  posts: [],
 };
 
 export const newsSlice = createSlice({
@@ -44,7 +45,7 @@ export const newsSlice = createSlice({
       .addCase(fetchNews.fulfilled, (state, { payload }) => ({
         ...state,
         pending: false,
-        news: payload,
+        posts: payload.articles,
       }))
       .addCase(fetchNews.rejected, (state) => ({
         ...state,
