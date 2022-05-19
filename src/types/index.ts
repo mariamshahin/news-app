@@ -7,4 +7,11 @@ export interface Post {
   title: string;
   url: string;
   urlToImage: string;
+  comments?: Array<Comment>;
+}
+
+export interface Comment {
+  name: string;
+  email: string;
+  message: string;
 }

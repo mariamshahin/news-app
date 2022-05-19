@@ -6,8 +6,6 @@ import { useAppDispatch, useAppSelector } from 'app/store/hooks';
 import { fetchNews, selectNews } from 'app/store/features/news-slice';
 import FeaturedPosts from 'app/components/news-list/featured-posts';
 import RecentPosts from 'app/components/news-list/recent-posts';
-import EmailBox from 'app/components/shared/email-box';
-import SocialLinks from 'app/components/shared/social-links';
 import TrendingPosts from 'app/components/news-list/trending-posts';
 import { shuffle } from 'app/utils';
 
@@ -39,8 +37,6 @@ const Home: NextPage = () => {
             <Row>
               <Col xs={12}>
                 <RecentPosts posts={shuffle(posts, 3)} />
-                <EmailBox />
-                <SocialLinks />
               </Col>
             </Row>
           </Col>
